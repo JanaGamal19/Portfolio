@@ -2,7 +2,9 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jana Gamal | Data Analyst & BI Specialist</title>
+  <meta name="theme-color" content="#0b0f14" />
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,9 +13,6 @@
     rel="stylesheet"
   />
   <style>
-    /* =========================================================
-       DESIGN TOKENS
-    ========================================================= */
     :root {
       --font-main:
         "Inter",
@@ -32,9 +31,6 @@
       --radius-lg: 18px;
       --radius-xl: 24px;
     }
-    /* =========================================================
-       DARK THEME
-    ========================================================= */
     [data-theme="dark"] {
       --bg-body: #0b0f14;
       --bg-surface: #11161d;
@@ -56,9 +52,6 @@
       --hero-glow:
         rgba(56, 189, 248, 0.09);
     }
-    /* =========================================================
-       LIGHT THEME
-    ========================================================= */
     [data-theme="light"] {
       --bg-body: #f7f9fc;
       --bg-surface: #ffffff;
@@ -80,9 +73,6 @@
       --hero-glow:
         rgba(2, 132, 199, 0.06);
     }
-    /* =========================================================
-       RESET
-    ========================================================= */
     *,
     *::before,
     *::after {
@@ -121,9 +111,6 @@
     ::selection {
       background: rgba(var(--primary-rgb), 0.25);
     }
-    /* =========================================================
-       LAYOUT
-    ========================================================= */
     .container {
       width: min(1160px, calc(100% - 40px));
       margin: 0 auto;
@@ -168,9 +155,6 @@
       color: var(--text-muted);
       font-size: 1rem;
     }
-    /* =========================================================
-       NAVIGATION
-    ========================================================= */
     header {
       position: sticky;
       top: 0;
@@ -254,9 +238,6 @@
       color: var(--primary);
       transform: translateY(-1px);
     }
-    /* =========================================================
-       HERO
-    ========================================================= */
     .hero {
       position: relative;
       overflow: hidden;
@@ -345,9 +326,6 @@
       font-family: var(--font-mono);
       font-size: 0.72rem;
     }
-    /* =========================================================
-       ABOUT / SUMMARY
-    ========================================================= */
     .summary-grid {
       display: grid;
       grid-template-columns: 0.9fr 1.4fr;
@@ -385,9 +363,6 @@
       font-size: 1.02rem;
       line-height: 1.75;
     }
-    /* =========================================================
-       EXPERTISE / SERVICES
-    ========================================================= */
     .expertise-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -447,9 +422,6 @@
       border-radius: 50%;
       background: var(--primary);
     }
-    /* =========================================================
-       PROJECTS
-    ========================================================= */
     .projects-header {
       display: flex;
       align-items: flex-end;
@@ -489,6 +461,7 @@
       overflow: hidden;
       border-bottom: 1px solid var(--border-color);
       background: var(--bg-body);
+      cursor: zoom-in;
     }
     .project-image-wrapper::after {
       content: "";
@@ -600,9 +573,6 @@
       border-color: var(--text-muted);
       background: var(--bg-surface-hover);
     }
-    /* =========================================================
-       SKILLS
-    ========================================================= */
     .skills-layout {
       display: grid;
       grid-template-columns: 0.75fr 1.4fr;
@@ -652,9 +622,6 @@
       font-size: 0.75rem;
       line-height: 1.5;
     }
-    /* =========================================================
-       CERTIFICATIONS
-    ========================================================= */
     .certifications-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -697,9 +664,6 @@
       color: var(--text-muted);
       font-size: 0.78rem;
     }
-    /* =========================================================
-       WHY WORK WITH ME
-    ========================================================= */
     .why-section {
       position: relative;
       overflow: hidden;
@@ -745,9 +709,6 @@
       font-size: 0.84rem;
       line-height: 1.75;
     }
-    /* =========================================================
-       FINAL CTA
-    ========================================================= */
     .cta {
       padding: 110px 0 120px;
       text-align: center;
@@ -781,9 +742,6 @@
       font-size: 0.74rem;
       font-weight: 600;
     }
-    /* =========================================================
-       FOOTER
-    ========================================================= */
     footer {
       border-top: 1px solid var(--border-light);
       padding: 27px 0;
@@ -804,9 +762,6 @@
       font-family: var(--font-mono);
       font-size: 0.68rem;
     }
-    /* =========================================================
-       RESPONSIVE
-    ========================================================= */
     @media (max-width: 900px) {
       .nav-links {
         display: none;
@@ -884,12 +839,9 @@
   </style>
 </head>
 <body>
-  <!-- =======================================================
-       NAVIGATION
-  ======================================================== -->
   <header>
     <div class="container">
-  <nav>
+      <nav>
     <a href="#top" class="logo">
       <span class="logo-mark">JG</span>
       <span>Jana Gamal</span>
@@ -916,9 +868,7 @@
 </div>
   </header>
   <main id="top">
-<!-- =====================================================
-     HERO
-====================================================== -->
+<!-- HERO -->
 <section class="hero">
   <div class="container">
     <div class="hero-inner">
@@ -929,17 +879,17 @@
       <h1>
         Jana Gamal
       </h1>
+      <!-- CHANGED TEXT #1 -->
       <div class="hero-title">
         Turning complex data into clear operation insights
       </div>
+      <!-- CHANGED TEXT #2 -->
       <p class="hero-description">
         <strong>
-          Translating raw data into clean structures, meaningful KPIs, and clear reporting that helps businesses make confident decisions.
+          Translating raw, disorganized data into clean structures,
+          meaningful KPIs, and clear reporting that helps businesses
+          make confident decisions.
         </strong>
-        <br />
-        Turning raw, disorganized data into clean structures,
-        meaningful KPIs, and clear reporting that helps businesses
-        make confident decisions.
       </p>
       <div class="hero-meta">
         <span>Excel</span>
@@ -950,13 +900,8 @@
     </div>
   </div>
 </section>
-<!-- =====================================================
-     ABOUT
-====================================================== -->
-<section
-  class="section"
-  id="about"
->
+<!-- ABOUT -->
+<section class="section" id="about">
   <div class="container">
     <div class="section-label">
       01 / About
@@ -993,13 +938,8 @@
     </div>
   </div>
 </section>
-<!-- =====================================================
-     SERVICES / EXPERTISE
-====================================================== -->
-<section
-  class="section"
-  id="services"
->
+<!-- SERVICES -->
+<section class="section" id="services">
   <div class="container">
     <div class="section-label">
       02 / Services
@@ -1088,13 +1028,8 @@
     </div>
   </div>
 </section>
-<!-- =====================================================
-     PROJECTS
-====================================================== -->
-<section
-  class="section"
-  id="work"
->
+<!-- PROJECTS -->
+<section class="section" id="work">
   <div class="container">
     <div class="projects-header">
       <div class="section-heading">
@@ -1114,8 +1049,15 @@
       </div>
     </div>
     <div class="projects-grid">
+      <!-- PROJECT 1 -->
       <article class="project-card">
-        <div class="project-image-wrapper">
+        <div
+          class="project-image-wrapper"
+          onclick="openDashboard(this.querySelector('img'))"
+          role="button"
+          tabindex="0"
+          aria-label="Open Superstore Sales Analytics dashboard"
+        >
           <img
             src="superstore.png"
             alt="Superstore Sales Analytics dashboard"
@@ -1168,8 +1110,15 @@
           </div>
         </div>
       </article>
+      <!-- PROJECT 2 -->
       <article class="project-card">
-        <div class="project-image-wrapper">
+        <div
+          class="project-image-wrapper"
+          onclick="openDashboard(this.querySelector('img'))"
+          role="button"
+          tabindex="0"
+          aria-label="Open Uber Trips and Cancellation Analytics dashboard"
+        >
           <img
             src="uber.png"
             alt="Uber Trips and Cancellation Analytics dashboard"
@@ -1221,8 +1170,15 @@
           </div>
         </div>
       </article>
+      <!-- PROJECT 3 -->
       <article class="project-card">
-        <div class="project-image-wrapper">
+        <div
+          class="project-image-wrapper"
+          onclick="openDashboard(this.querySelector('img'))"
+          role="button"
+          tabindex="0"
+          aria-label="Open Samsung Supply Chain Analytics dashboard"
+        >
           <img
             src="samsung.png"
             alt="Samsung Supply Chain Analytics dashboard"
@@ -1274,8 +1230,15 @@
           </div>
         </div>
       </article>
+      <!-- PROJECT 4 -->
       <article class="project-card">
-        <div class="project-image-wrapper">
+        <div
+          class="project-image-wrapper"
+          onclick="openDashboard(this.querySelector('img'))"
+          role="button"
+          tabindex="0"
+          aria-label="Open USA Pizza Orders Analysis dashboard"
+        >
           <img
             src="pizza.png"
             alt="USA Pizza Orders Analysis dashboard"
@@ -1330,13 +1293,8 @@
     </div>
   </div>
 </section>
-<!-- =====================================================
-     SKILLS
-====================================================== -->
-<section
-  class="section"
-  id="skills"
->
+<!-- SKILLS -->
+<section class="section" id="skills">
   <div class="container">
     <div class="section-label">
       04 / Skills
@@ -1354,72 +1312,48 @@
       </div>
       <div class="skills-list">
         <article class="skill-card">
-          <span class="skill-number">
-            01
-          </span>
-          <h4>
-            Advanced Excel
-          </h4>
+          <span class="skill-number">01</span>
+          <h4>Advanced Excel</h4>
           <p>
             Data analysis, formulas, Pivot Tables,
             dynamic reporting, and modeling.
           </p>
         </article>
         <article class="skill-card">
-          <span class="skill-number">
-            02
-          </span>
-          <h4>
-            Power BI
-          </h4>
+          <span class="skill-number">02</span>
+          <h4>Power BI</h4>
           <p>
             Interactive dashboards, KPI reporting,
             DAX, and business visualization.
           </p>
         </article>
         <article class="skill-card">
-          <span class="skill-number">
-            03
-          </span>
-          <h4>
-            SQL
-          </h4>
+          <span class="skill-number">03</span>
+          <h4>SQL</h4>
           <p>
             Querying, filtering, aggregating,
             and analyzing structured data.
           </p>
         </article>
         <article class="skill-card">
-          <span class="skill-number">
-            04
-          </span>
-          <h4>
-            Power Query
-          </h4>
+          <span class="skill-number">04</span>
+          <h4>Power Query</h4>
           <p>
             Data cleaning, transformation,
             preparation, and repeatable workflows.
           </p>
         </article>
         <article class="skill-card">
-          <span class="skill-number">
-            05
-          </span>
-          <h4>
-            Data Cleaning
-          </h4>
+          <span class="skill-number">05</span>
+          <h4>Data Cleaning</h4>
           <p>
             Deduplication, formatting,
             validation, and structural preparation.
           </p>
         </article>
         <article class="skill-card">
-          <span class="skill-number">
-            06
-          </span>
-          <h4>
-            Business Reporting
-          </h4>
+          <span class="skill-number">06</span>
+          <h4>Business Reporting</h4>
           <p>
             KPI-focused reports designed around
             practical business questions.
@@ -1429,9 +1363,7 @@
     </div>
   </div>
 </section>
-<!-- =====================================================
-     CERTIFICATIONS
-====================================================== -->
+<!-- CERTIFICATIONS -->
 <section class="section">
   <div class="container">
     <div class="section-label">
@@ -1477,13 +1409,8 @@
     </div>
   </div>
 </section>
-<!-- =====================================================
-     WHY WORK WITH ME
-====================================================== -->
-<section
-  class="section why-section"
-  id="why"
->
+<!-- WHY WORK WITH ME -->
+<section class="section why-section" id="why">
   <div class="container">
     <div class="section-label">
       06 / Why Work With Me
@@ -1543,15 +1470,17 @@
     </div>
   </div>
 </section>
-<!-- =====================================================
-     FINAL CTA
-====================================================== -->
+<!-- CTA -->
 <section class="cta">
   <div class="container">
     <div class="cta-inner">
-      <div class="section-label" style="justify-content:center;">
+      <div
+        class="section-label"
+        style="justify-content:center;"
+      >
         Ready to work with your data?
       </div>
+      <!-- CHANGED TEXT #3 -->
       <h2>
         Let’s turn your complex data into your biggest
         business advantage.
@@ -1570,9 +1499,6 @@
   </div>
 </section>
   </main>
-  <!-- =======================================================
-       FOOTER
-    ======================================================== -->
   <footer>
 <div class="container">
   <div class="footer-inner">
@@ -1589,10 +1515,203 @@
   </div>
 </div>
   </footer>
-  <!-- =======================================================
-       THEME SWITCHER
-  ======================================================== -->
+  <!-- DASHBOARD LIGHTBOX -->
+  <div
+    id="dashboardLightbox"
+    class="dashboard-lightbox"
+    aria-hidden="true"
+  >
+<button
+  class="lightbox-close"
+  id="lightboxClose"
+  type="button"
+  aria-label="Close dashboard viewer"
+>
+  ×
+</button>
+<div class="lightbox-toolbar">
+  <button
+    type="button"
+    id="zoomOut"
+    aria-label="Zoom out"
+  >
+    −
+  </button>
+  <span id="zoomLevel">
+    100%
+  </span>
+  <button
+    type="button"
+    id="zoomIn"
+    aria-label="Zoom in"
+  >
+    +
+  </button>
+  <button
+    type="button"
+    id="zoomReset"
+  >
+    Reset
+  </button>
+</div>
+<div
+  class="lightbox-viewport"
+  id="lightboxViewport"
+>
+  <img
+    id="lightboxImage"
+    src=""
+    alt=""
+    draggable="false"
+  />
+</div>
+<div class="lightbox-hint">
+  Scroll to zoom · Drag to move · Double-click to zoom
+</div>
+  </div>
+  <style>
+    /* =========================================================
+       DASHBOARD LIGHTBOX
+    ========================================================= */
+    .dashboard-lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 70px 25px 55px;
+      background: rgba(3, 7, 12, 0.96);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease;
+    }
+    .dashboard-lightbox.active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 18px;
+      right: 22px;
+      z-index: 10;
+      width: 44px;
+      height: 44px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.07);
+      color: #ffffff;
+      cursor: pointer;
+      font-size: 1.9rem;
+      line-height: 1;
+      transition: 0.2s ease;
+    }
+    .lightbox-close:hover {
+      background: rgba(255, 255, 255, 0.14);
+      border-color: rgba(255, 255, 255, 0.35);
+      transform: rotate(90deg);
+    }
+    .lightbox-toolbar {
+      position: absolute;
+      top: 18px;
+      left: 50%;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transform: translateX(-50%);
+      padding: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 12px;
+      background: rgba(17, 22, 29, 0.92);
+      backdrop-filter: blur(12px);
+    }
+    .lightbox-toolbar button {
+      min-width: 38px;
+      height: 34px;
+      padding: 5px 10px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 7px;
+      background: rgba(255, 255, 255, 0.06);
+      color: #ffffff;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: 0.2s ease;
+    }
+    .lightbox-toolbar button:hover {
+      background: rgba(56, 189, 248, 0.15);
+      border-color: rgba(56, 189, 248, 0.4);
+      color: #38bdf8;
+    }
+    #zoomLevel {
+      min-width: 55px;
+      color: #aeb8c5;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      text-align: center;
+    }
+    .lightbox-viewport {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: grab;
+    }
+    .lightbox-viewport.dragging {
+      cursor: grabbing;
+    }
+    #lightboxImage {
+      max-width: none;
+      width: auto;
+      height: auto;
+      max-height: none;
+      user-select: none;
+      -webkit-user-drag: none;
+      transform-origin: center center;
+      will-change: transform;
+      transition: transform 0.08s ease-out;
+    }
+    .lightbox-hint {
+      position: absolute;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 7px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      border-radius: 999px;
+      background: rgba(17, 22, 29, 0.78);
+      color: #8c98a8;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+    @media (max-width: 640px) {
+      .dashboard-lightbox {
+        padding: 70px 10px 50px;
+      }
+      .lightbox-toolbar {
+        left: 20px;
+        right: 70px;
+        transform: none;
+        justify-content: center;
+      }
+      .lightbox-hint {
+        font-size: 0.58rem;
+      }
+    }
+  </style>
   <script>
+    /* =========================================================
+       THEME SWITCHER
+    ========================================================= */
     const themeToggle =
       document.getElementById("themeToggle");
     const themeIcon =
@@ -1631,6 +1750,207 @@
             ? "light"
             : "dark";
         setTheme(targetTheme);
+      }
+    );
+    /* =========================================================
+       DASHBOARD LIGHTBOX / ZOOM / PAN
+    ========================================================= */
+    const lightbox =
+      document.getElementById("dashboardLightbox");
+    const lightboxImage =
+      document.getElementById("lightboxImage");
+    const viewport =
+      document.getElementById("lightboxViewport");
+    const closeButton =
+      document.getElementById("lightboxClose");
+    const zoomInButton =
+      document.getElementById("zoomIn");
+    const zoomOutButton =
+      document.getElementById("zoomOut");
+    const zoomResetButton =
+      document.getElementById("zoomReset");
+    const zoomLevel =
+      document.getElementById("zoomLevel");
+    let zoom = 1;
+    let positionX = 0;
+    let positionY = 0;
+    let isDragging = false;
+    let startX = 0;
+    let startY = 0;
+    let startPositionX = 0;
+    let startPositionY = 0;
+    function updateTransform() {
+      lightboxImage.style.transform =
+        `translate(${positionX}px, ${positionY}px) scale(${zoom})`;
+      zoomLevel.textContent =
+        `${Math.round(zoom * 100)}%`;
+    }
+    function resetZoom() {
+      zoom = 1;
+      positionX = 0;
+      positionY = 0;
+      updateTransform();
+    }
+    function changeZoom(amount) {
+      const newZoom =
+        Math.min(
+          5,
+          Math.max(
+            0.5,
+            zoom + amount
+          )
+        );
+      zoom = newZoom;
+      updateTransform();
+    }
+    function openDashboard(image) {
+      if (!image) return;
+      lightboxImage.src =
+        image.currentSrc || image.src;
+      lightboxImage.alt =
+        image.alt || "Dashboard preview";
+      resetZoom();
+      lightbox.classList.add("active");
+      lightbox.setAttribute(
+        "aria-hidden",
+        "false"
+      );
+      document.body.style.overflow = "hidden";
+    }
+    function closeDashboard() {
+      lightbox.classList.remove("active");
+      lightbox.setAttribute(
+        "aria-hidden",
+        "true"
+      );
+      document.body.style.overflow = "";
+      lightboxImage.src = "";
+      resetZoom();
+    }
+    zoomInButton.addEventListener(
+      "click",
+      () => changeZoom(0.25)
+    );
+    zoomOutButton.addEventListener(
+      "click",
+      () => changeZoom(-0.25)
+    );
+    zoomResetButton.addEventListener(
+      "click",
+      resetZoom
+    );
+    closeButton.addEventListener(
+      "click",
+      closeDashboard
+    );
+    lightbox.addEventListener(
+      "click",
+      (event) => {
+        if (
+          event.target === lightbox ||
+          event.target === viewport
+        ) {
+          closeDashboard();
+        }
+      }
+    );
+    viewport.addEventListener(
+      "wheel",
+      (event) => {
+        event.preventDefault();
+        changeZoom(
+          event.deltaY < 0
+            ? 0.15
+            : -0.15
+        );
+      },
+      { passive: false }
+    );
+    viewport.addEventListener(
+      "mousedown",
+      (event) => {
+        isDragging = true;
+        viewport.classList.add("dragging");
+        startX = event.clientX;
+        startY = event.clientY;
+        startPositionX = positionX;
+        startPositionY = positionY;
+        lightboxImage.style.transition =
+          "none";
+      }
+    );
+    window.addEventListener(
+      "mousemove",
+      (event) => {
+        if (!isDragging) return;
+        positionX =
+          startPositionX +
+          (event.clientX - startX);
+        positionY =
+          startPositionY +
+          (event.clientY - startY);
+        updateTransform();
+      }
+    );
+    window.addEventListener(
+      "mouseup",
+      () => {
+        isDragging = false;
+        viewport.classList.remove(
+          "dragging"
+        );
+        lightboxImage.style.transition =
+          "transform 0.08s ease-out";
+      }
+    );
+    viewport.addEventListener(
+      "dblclick",
+      () => {
+        if (zoom === 1) {
+          zoom = 2;
+        } else {
+          resetZoom();
+        }
+        updateTransform();
+      }
+    );
+    document.addEventListener(
+      "keydown",
+      (event) => {
+        if (
+          !lightbox.classList.contains("active")
+        ) {
+          return;
+        }
+        if (event.key === "Escape") {
+          closeDashboard();
+        }
+        if (event.key === "+") {
+          changeZoom(0.25);
+        }
+        if (event.key === "-") {
+          changeZoom(-0.25);
+        }
+      }
+    );
+    document.querySelectorAll(
+      ".project-image-wrapper"
+    ).forEach(
+      (wrapper) => {
+        wrapper.addEventListener(
+          "keydown",
+          (event) => {
+            if (
+              event.key === "Enter" ||
+              event.key === " "
+            ) {
+              event.preventDefault();
+              openDashboard(
+                wrapper.querySelector("img")
+              );
+            }
+          }
+        );
       }
     );
   </script>
