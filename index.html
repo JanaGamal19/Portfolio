@@ -2,19 +2,7 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
   <title>Jana Gamal | Data Analyst & BI Specialist</title>
-  <meta
-    name="description"
-    content="Jana Gamal — Data Analyst & BI Specialist specializing in Excel, Power BI, SQL, data cleaning, business intelligence, and actionable reporting."
-  />
-  <meta
-    name="theme-color"
-    content="#0b0f14"
-  />
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -495,16 +483,12 @@
       transform: translateY(-5px);
       border-color: var(--tag-border);
     }
-    /* =========================================================
-       PROJECT IMAGE / CLICKABLE DASHBOARD
-    ========================================================= */
     .project-image-wrapper {
       position: relative;
       height: 250px;
       overflow: hidden;
       border-bottom: 1px solid var(--border-color);
       background: var(--bg-body);
-      cursor: zoom-in;
     }
     .project-image-wrapper::after {
       content: "";
@@ -527,24 +511,6 @@
     }
     .project-card:hover .project-img {
       transform: scale(1.035);
-    }
-    .project-image-wrapper:hover::before {
-      content: "Click to view full size";
-      position: absolute;
-      z-index: 2;
-      left: 50%;
-      bottom: 16px;
-      transform: translateX(-50%);
-      padding: 7px 11px;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      border-radius: 999px;
-      background: rgba(0, 0, 0, 0.65);
-      color: #ffffff;
-      font-family: var(--font-mono);
-      font-size: 0.68rem;
-      white-space: nowrap;
-      pointer-events: none;
-      backdrop-filter: blur(8px);
     }
     .project-body {
       padding: 26px;
@@ -633,131 +599,6 @@
     .btn-secondary:hover {
       border-color: var(--text-muted);
       background: var(--bg-surface-hover);
-    }
-    /* =========================================================
-       DASHBOARD IMAGE LIGHTBOX
-    ========================================================= */
-    .image-lightbox {
-      position: fixed;
-      inset: 0;
-      z-index: 9999;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 30px;
-      background: rgba(0, 0, 0, 0.92);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      overflow: hidden;
-    }
-    .image-lightbox.active {
-      display: flex;
-    }
-    .lightbox-content {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-      cursor: grab;
-      touch-action: none;
-    }
-    .lightbox-content.dragging {
-      cursor: grabbing;
-    }
-    .lightbox-image {
-      max-width: none;
-      width: auto;
-      height: auto;
-      max-height: 90vh;
-      max-width: 92vw;
-      object-fit: contain;
-      user-select: none;
-      -webkit-user-drag: none;
-      transform-origin: center center;
-      will-change: transform;
-      border-radius: 6px;
-      box-shadow:
-        0 30px 100px rgba(0, 0, 0, 0.5);
-    }
-    .lightbox-close {
-      position: absolute;
-      top: 20px;
-      right: 24px;
-      z-index: 10;
-      width: 44px;
-      height: 44px;
-      display: grid;
-      place-items: center;
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 50%;
-      background: rgba(20, 25, 32, 0.85);
-      color: #ffffff;
-      font-size: 1.5rem;
-      line-height: 1;
-      cursor: pointer;
-      transition: var(--transition);
-      backdrop-filter: blur(10px);
-    }
-    .lightbox-close:hover {
-      background: var(--primary);
-      border-color: var(--primary);
-      transform: rotate(90deg);
-    }
-    .lightbox-controls {
-      position: absolute;
-      z-index: 10;
-      left: 50%;
-      bottom: 24px;
-      transform: translateX(-50%);
-      display: flex;
-      align-items: center;
-      gap: 7px;
-      padding: 8px;
-      border: 1px solid rgba(255, 255, 255, 0.15);
-      border-radius: 999px;
-      background: rgba(20, 25, 32, 0.88);
-      backdrop-filter: blur(12px);
-    }
-    .lightbox-control {
-      width: 38px;
-      height: 38px;
-      display: grid;
-      place-items: center;
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 50%;
-      background: transparent;
-      color: #ffffff;
-      cursor: pointer;
-      font-size: 1rem;
-      transition: var(--transition);
-    }
-    .lightbox-control:hover {
-      background: rgba(255, 255, 255, 0.12);
-      border-color: rgba(255, 255, 255, 0.25);
-    }
-    .lightbox-zoom-level {
-      min-width: 55px;
-      color: #cbd5e1;
-      font-family: var(--font-mono);
-      font-size: 0.7rem;
-      text-align: center;
-    }
-    .lightbox-hint {
-      position: absolute;
-      top: 24px;
-      left: 50%;
-      transform: translateX(-50%);
-      color: rgba(255, 255, 255, 0.55);
-      font-family: var(--font-mono);
-      font-size: 0.67rem;
-      white-space: nowrap;
-      pointer-events: none;
-    }
-    body.lightbox-open {
-      overflow: hidden;
     }
     /* =========================================================
        SKILLS
@@ -1039,26 +880,6 @@
       #themeText {
         display: none;
       }
-      .image-lightbox {
-        padding: 15px;
-      }
-      .lightbox-image {
-        max-width: 96vw;
-        max-height: 82vh;
-      }
-      .lightbox-close {
-        top: 14px;
-        right: 14px;
-        width: 40px;
-        height: 40px;
-      }
-      .lightbox-controls {
-        bottom: 15px;
-      }
-      .lightbox-hint {
-        top: 18px;
-        font-size: 0.58rem;
-      }
     }
   </style>
 </head>
@@ -1068,853 +889,710 @@
   ======================================================== -->
   <header>
     <div class="container">
-      <nav>
-        <a href="#top" class="logo">
-          <span class="logo-mark">
-            JG
-          </span>
-          <span>
-            Jana Gamal
-          </span>
-        </a>
-        <div class="nav-links">
-          <a href="#about">
-            About
-          </a>
-          <a href="#services">
-            Services
-          </a>
-          <a href="#work">
-            Work
-          </a>
-          <a href="#skills">
-            Skills
-          </a>
-          <a href="#why">
-            Why Me
-          </a>
-        </div>
-        <div class="nav-actions">
-          <button
-            id="themeToggle"
-            class="theme-toggle-btn"
-            aria-label="Toggle between dark and light mode"
-            type="button"
-          >
-            <span id="themeIcon">
-              ☀️
-            </span>
-            <span id="themeText">
-              Light
-            </span>
-          </button>
-        </div>
-      </nav>
+  <nav>
+    <a href="#top" class="logo">
+      <span class="logo-mark">JG</span>
+      <span>Jana Gamal</span>
+    </a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#why">Why Me</a>
     </div>
+    <div class="nav-actions">
+      <button
+        id="themeToggle"
+        class="theme-toggle-btn"
+        aria-label="Toggle between dark and light mode"
+        type="button"
+      >
+        <span id="themeIcon">☀️</span>
+        <span id="themeText">Light</span>
+      </button>
+    </div>
+  </nav>
+</div>
   </header>
   <main id="top">
-    <!-- =====================================================
-         HERO
-    ====================================================== -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero-inner">
-          <div class="hero-kicker">
-            <span class="status-dot"></span>
-            Analytics Portfolio
-          </div>
-          <h1>
-            Jana Gamal
-          </h1>
-          <div class="hero-title">
-            Data Analyst &amp; BI Specialist
-          </div>
-          <p class="hero-description">
-            <strong>
-              Translating complex metrics into simple business insights.
-            </strong>
-            <br />
-            Turning raw, disorganized data into clean structures,
-            meaningful KPIs, and clear reporting that helps businesses
-            make confident decisions.
-          </p>
-          <div class="hero-meta">
-            <span>
-              Excel
-            </span>
-            <span>
-              Power BI
-            </span>
-            <span>
-              SQL
-            </span>
-            <span>
-              Business Intelligence
-            </span>
-          </div>
-        </div>
+<!-- =====================================================
+     HERO
+====================================================== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-kicker">
+        <span class="status-dot"></span>
+        Analytics Portfolio
       </div>
-    </section>
-    <!-- =====================================================
-         ABOUT
-    ====================================================== -->
-    <section
-      class="section"
-      id="about"
-    >
-      <div class="container">
-        <div class="section-label">
-          01 / About
-        </div>
-        <div class="summary-grid">
-          <div class="summary-intro">
-            <h3>
-              From messy data to business clarity.
-            </h3>
-            <p>
-              Professional Summary
-            </p>
-          </div>
-          <div class="summary-copy">
-            <p>
-              I’m a results-driven Data Analyst &amp; BI Specialist
-              focused on transforming disorganized, raw data into
-              clean, structured, and actionable business intelligence.
-            </p>
-            <p>
-              Working primarily with Excel and Power BI, I bridge
-              the gap between chaotic spreadsheets and clear
-              executive visibility — making information easier to
-              understand, explore, and act on.
-            </p>
-            <div class="summary-highlight">
-              Whether you are dealing with fragmented files or need
-              dynamic dashboards to monitor key performance indicators,
-              I help business owners, startups, and operations teams
-              turn their data into practical insights without the
-              headache.
-            </div>
-          </div>
-        </div>
+      <h1>
+        Jana Gamal
+      </h1>
+      <div class="hero-title">
+        Turning complex data into clear operation insights
       </div>
-    </section>
-    <!-- =====================================================
-         SERVICES / EXPERTISE
-    ====================================================== -->
-    <section
-      class="section"
-      id="services"
-    >
-      <div class="container">
-        <div class="section-label">
-          02 / Services
-        </div>
-        <div class="section-heading">
-          <h2>
-            Data work built around clarity.
-          </h2>
-          <p>
-            I focus on the parts of analytics that turn raw
-            information into reliable, useful business reporting.
-          </p>
-        </div>
-        <div class="expertise-grid">
-          <article class="expertise-card">
-            <div class="card-number">
-              01 / 03
-            </div>
-            <h3>
-              Data Cleaning &amp; Preparation
-            </h3>
-            <p>
-              Building a reliable foundation before analysis begins.
-              I transform inconsistent and fragmented datasets into
-              structured, analysis-ready data.
-            </p>
-            <ul class="service-list">
-              <li>
-                Data hygiene &amp; structural formatting
-              </li>
-              <li>
-                Deduplication and data validation
-              </li>
-              <li>
-                Power Query transformations
-              </li>
-            </ul>
-          </article>
-          <article class="expertise-card">
-            <div class="card-number">
-              02 / 03
-            </div>
-            <h3>
-              Business Visualization &amp; Reporting
-            </h3>
-            <p>
-              Turning complex metrics into intuitive reports and
-              dashboards that make important information easier
-              to understand.
-            </p>
-            <ul class="service-list">
-              <li>
-                Interactive Power BI dashboards
-              </li>
-              <li>
-                Executive-ready KPI reporting
-              </li>
-              <li>
-                Dynamic Excel reporting
-              </li>
-            </ul>
-          </article>
-          <article class="expertise-card">
-            <div class="card-number">
-              03 / 03
-            </div>
-            <h3>
-              Business Analysis
-            </h3>
-            <p>
-              Connecting numbers to business questions so that
-              reporting is focused on what actually matters.
-            </p>
-            <ul class="service-list">
-              <li>
-                KPI and performance analysis
-              </li>
-              <li>
-                Trend and pattern identification
-              </li>
-              <li>
-                Operational performance insights
-              </li>
-            </ul>
-          </article>
-        </div>
+      <p class="hero-description">
+        <strong>
+          Translating raw data into clean structures, meaningful KPIs, and clear reporting that helps businesses make confident decisions.
+        </strong>
+        <br />
+        Turning raw, disorganized data into clean structures,
+        meaningful KPIs, and clear reporting that helps businesses
+        make confident decisions.
+      </p>
+      <div class="hero-meta">
+        <span>Excel</span>
+        <span>Power BI</span>
+        <span>SQL</span>
+        <span>Business Intelligence</span>
       </div>
-    </section>
-    <!-- =====================================================
-         PROJECTS
-    ====================================================== -->
-    <section
-      class="section"
-      id="work"
-    >
-      <div class="container">
-        <div class="projects-header">
-          <div class="section-heading">
-            <div class="section-label">
-              03 / Selected Work
-            </div>
-            <h2>
-              The work behind the numbers.
-            </h2>
-            <p>
-              Four analytics projects covering sales,
-              mobility, supply chain, and restaurant operations.
-            </p>
-          </div>
-          <div class="project-count">
-            04 ANALYTICS PROJECTS
-          </div>
-        </div>
-        <div class="projects-grid">
-          <!-- =================================================
-               PROJECT 1
-          ================================================== -->
-          <article class="project-card">
-            <div class="project-image-wrapper">
-              <img
-                src="superstore.png"
-                alt="Superstore Sales Analytics dashboard"
-                class="project-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="project-body">
-              <div class="project-topline">
-                <span class="project-type">
-                  Excel Analytics
-                </span>
-                <span class="project-index">
-                  01 / 04
-                </span>
-              </div>
-              <h3 class="project-title">
-                Superstore Sales Analytics
-              </h3>
-              <p class="project-description">
-                A multi-year sales analysis covering 2016–2019,
-                designed to explore commercial performance across
-                customer segments, regions, and product categories.
-                The analysis uses dynamic Excel reporting, KPIs,
-                Pivot Tables, and interactive slicers.
-              </p>
-              <div class="project-tags">
-                <span class="tag">
-                  Excel
-                </span>
-                <span class="tag">
-                  Pivot Tables
-                </span>
-                <span class="tag">
-                  Data Modeling
-                </span>
-                <span class="tag">
-                  KPI Analysis
-                </span>
-              </div>
-              <div class="project-buttons">
-                <a
-                  href="https://mavenshowcase.com/project/57862"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                >
-                  View Case Study
-                </a>
-                <a
-                  href="https://tinyurl.com/SuperStoreAnalysis-Jana"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-secondary"
-                >
-                  Excel File
-                </a>
-              </div>
-            </div>
-          </article>
-          <!-- =================================================
-               PROJECT 2
-          ================================================== -->
-          <article class="project-card">
-            <div class="project-image-wrapper">
-              <img
-                src="uber.png"
-                alt="Uber Trips and Cancellation Analytics dashboard"
-                class="project-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="project-body">
-              <div class="project-topline">
-                <span class="project-type">
-                  Power BI
-                </span>
-                <span class="project-index">
-                  02 / 04
-                </span>
-              </div>
-              <h3 class="project-title">
-                Uber Trips &amp; Cancellation Analytics
-              </h3>
-              <p class="project-description">
-                An operational analytics project focused on trip
-                activity, completed and cancelled rides, vehicle
-                performance, and the factors contributing to
-                cancellation patterns.
-              </p>
-              <div class="project-tags">
-                <span class="tag">
-                  Power BI
-                </span>
-                <span class="tag">
-                  DAX
-                </span>
-                <span class="tag">
-                  Power Query
-                </span>
-                <span class="tag">
-                  Operations
-                </span>
-              </div>
-              <div class="project-buttons">
-                <a
-                  href="https://mavenshowcase.com/project/57863"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                >
-                  View Case Study
-                </a>
-                <a
-                  href="https://tinyurl.com/ubertrips-analysis"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-secondary"
-                >
-                  Power BI File
-                </a>
-              </div>
-            </div>
-          </article>
-          <!-- =================================================
-               PROJECT 3
-          ================================================== -->
-          <article class="project-card">
-            <div class="project-image-wrapper">
-              <img
-                src="samsung.png"
-                alt="Samsung Supply Chain Analytics dashboard"
-                class="project-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="project-body">
-              <div class="project-topline">
-                <span class="project-type">
-                  Power BI + ETL
-                </span>
-                <span class="project-index">
-                  03 / 04
-                </span>
-              </div>
-              <h3 class="project-title">
-                Samsung Supply Chain Analytics
-              </h3>
-              <p class="project-description">
-                An end-to-end supply chain analysis examining
-                supplier performance, inventory, lead times,
-                carrier delays, fulfillment efficiency, and
-                logistics-related KPIs.
-              </p>
-              <div class="project-tags">
-                <span class="tag">
-                  Power BI
-                </span>
-                <span class="tag">
-                  Power Query
-                </span>
-                <span class="tag">
-                  DAX
-                </span>
-                <span class="tag">
-                  Supply Chain
-                </span>
-              </div>
-              <div class="project-buttons">
-                <a
-                  href="https://mavenshowcase.com/project/57864"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                >
-                  View Case Study
-                </a>
-                <a
-                  href="https://tinyurl.com/SamsungAnalysis-Jana"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-secondary"
-                >
-                  Power BI File
-                </a>
-              </div>
-            </div>
-          </article>
-          <!-- =================================================
-               PROJECT 4
-          ================================================== -->
-          <article class="project-card">
-            <div class="project-image-wrapper">
-              <img
-                src="pizza.png"
-                alt="USA Pizza Orders Analysis dashboard"
-                class="project-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="project-body">
-              <div class="project-topline">
-                <span class="project-type">
-                  Business Analytics
-                </span>
-                <span class="project-index">
-                  04 / 04
-                </span>
-              </div>
-              <h3 class="project-title">
-                USA Pizza Orders Analysis
-              </h3>
-              <p class="project-description">
-                A restaurant operations analysis exploring order
-                volume, delivery performance, payment methods,
-                product categories, geographic patterns, and
-                monthly sales trends.
-              </p>
-              <div class="project-tags">
-                <span class="tag">
-                  SQL
-                </span>
-                <span class="tag">
-                  Power BI
-                </span>
-                <span class="tag">
-                  DAX
-                </span>
-                <span class="tag">
-                  Operations
-                </span>
-              </div>
-              <div class="project-buttons">
-                <a
-                  href="https://mavenshowcase.com/project/57865"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary"
-                >
-                  View Case Study
-                </a>
-                <a
-                  href="https://tinyurl.com/USAPizzaAnalysis-Jana"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="btn btn-secondary"
-                >
-                  Power BI File
-                </a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <!-- =====================================================
-         SKILLS
-    ====================================================== -->
-    <section
-      class="section"
-      id="skills"
-    >
-      <div class="container">
-        <div class="section-label">
-          04 / Skills
-        </div>
-        <div class="skills-layout">
-          <div class="skills-intro">
-            <h3>
-              The tools behind the analysis.
-            </h3>
-            <p>
-              My core toolkit is focused on practical data analysis,
-              business intelligence, data preparation, and clear
-              reporting.
-            </p>
-          </div>
-          <div class="skills-list">
-            <article class="skill-card">
-              <span class="skill-number">
-                01
-              </span>
-              <h4>
-                Advanced Excel
-              </h4>
-              <p>
-                Data analysis, formulas, Pivot Tables,
-                dynamic reporting, and modeling.
-              </p>
-            </article>
-            <article class="skill-card">
-              <span class="skill-number">
-                02
-              </span>
-              <h4>
-                Power BI
-              </h4>
-              <p>
-                Interactive dashboards, KPI reporting,
-                DAX, and business visualization.
-              </p>
-            </article>
-            <article class="skill-card">
-              <span class="skill-number">
-                03
-              </span>
-              <h4>
-                SQL
-              </h4>
-              <p>
-                Querying, filtering, aggregating,
-                and analyzing structured data.
-              </p>
-            </article>
-            <article class="skill-card">
-              <span class="skill-number">
-                04
-              </span>
-              <h4>
-                Power Query
-              </h4>
-              <p>
-                Data cleaning, transformation,
-                preparation, and repeatable workflows.
-              </p>
-            </article>
-            <article class="skill-card">
-              <span class="skill-number">
-                05
-              </span>
-              <h4>
-                Data Cleaning
-              </h4>
-              <p>
-                Deduplication, formatting,
-                validation, and structural preparation.
-              </p>
-            </article>
-            <article class="skill-card">
-              <span class="skill-number">
-                06
-              </span>
-              <h4>
-                Business Reporting
-              </h4>
-              <p>
-                KPI-focused reports designed around
-                practical business questions.
-              </p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- =====================================================
-         CERTIFICATIONS
-    ====================================================== -->
-    <section class="section">
-      <div class="container">
-        <div class="section-label">
-          05 / Certifications &amp; Training
-        </div>
-        <div class="section-heading">
-          <h2>
-            Building a practical analytics foundation.
-          </h2>
-          <p>
-            Training focused on developing the analytical,
-            technical, and business skills needed to work
-            effectively with data.
-          </p>
-        </div>
-        <div class="certifications-grid">
-          <article class="cert-card">
-            <div class="cert-icon">
-              IBM
-            </div>
-            <div>
-              <h3>
-                IBM Data Fundamentals Certificate
-              </h3>
-              <p>
-                Data fundamentals and analytical concepts.
-              </p>
-            </div>
-          </article>
-          <article class="cert-card">
-            <div class="cert-icon">
-              DEPI
-            </div>
-            <div>
-              <h3>
-                Digital Egypt Pioneers Initiative
-              </h3>
-              <p>
-                Data Analytics Track
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <!-- =====================================================
-         WHY WORK WITH ME
-    ====================================================== -->
-    <section
-      class="section why-section"
-      id="why"
-    >
-      <div class="container">
-        <div class="section-label">
-          06 / Why Work With Me
-        </div>
-        <div class="section-heading">
-          <h2>
-            More than dashboards.
-          </h2>
-          <p>
-            Good analytics should make your work easier,
-            your reporting more reliable, and your decisions
-            more informed.
-          </p>
-        </div>
-        <div class="why-grid">
-          <article class="why-card">
-            <div class="why-card-number">
-              01 / QUALITY
-            </div>
-            <h3>
-              Obsessive Quality Control
-            </h3>
-            <p>
-              I don’t just build reports. I pay close attention
-              to the underlying data structure first, cleaning,
-              validating, and checking the data so the resulting
-              insights are reliable and trustworthy.
-            </p>
-          </article>
-          <article class="why-card">
-            <div class="why-card-number">
-              02 / BUSINESS
-            </div>
-            <h3>
-              Business-First Mindset
-            </h3>
-            <p>
-              I focus on the metrics that matter most to your
-              business. The goal is to reduce repetitive manual
-              reporting and give you clearer visibility into
-              performance and operations.
-            </p>
-          </article>
-          <article class="why-card">
-            <div class="why-card-number">
-              03 / COMMUNICATION
-            </div>
-            <h3>
-              Clear &amp; Transparent Communication
-            </h3>
-            <p>
-              You’ll get structured deliverables, clear project
-              milestones, and communication focused on your
-              specific goals and requirements.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-    <!-- =====================================================
-         FINAL CTA
-    ====================================================== -->
-    <section class="cta">
-      <div class="container">
-        <div class="cta-inner">
-          <div
-            class="section-label"
-            style="justify-content:center;"
-          >
-            Ready to work with your data?
-          </div>
-          <h2>
-            Let’s turn your data chaos into your biggest
-            business advantage.
-          </h2>
-          <p>
-            If you have messy spreadsheets, fragmented data,
-            repetitive reporting, or need a clear Power BI
-            dashboard, I’d be happy to discuss your project
-            and understand what you need.
-          </p>
-          <span class="cta-highlight">
-            Message me through the freelance platform where
-            you found this portfolio.
-          </span>
-        </div>
-      </div>
-    </section>
-  </main>
-  <!-- =======================================================
-       DASHBOARD IMAGE LIGHTBOX
-  ======================================================== -->
-  <div
-    id="imageLightbox"
-    class="image-lightbox"
-    aria-hidden="true"
-    role="dialog"
-    aria-label="Dashboard image viewer"
-  >
-    <button
-      id="lightboxClose"
-      class="lightbox-close"
-      type="button"
-      aria-label="Close image viewer"
-    >
-      &times;
-    </button>
-    <div
-      id="lightboxContent"
-      class="lightbox-content"
-    >
-      <img
-        id="lightboxImage"
-        class="lightbox-image"
-        src=""
-        alt=""
-        draggable="false"
-      />
-    </div>
-    <div class="lightbox-hint">
-      Scroll to zoom · Drag to move · Double-click to zoom · Esc to close
-    </div>
-    <div class="lightbox-controls">
-      <button
-        id="zoomOut"
-        class="lightbox-control"
-        type="button"
-        aria-label="Zoom out"
-      >
-        −
-      </button>
-      <span
-        id="zoomLevel"
-        class="lightbox-zoom-level"
-      >
-        100%
-      </span>
-      <button
-        id="zoomIn"
-        class="lightbox-control"
-        type="button"
-        aria-label="Zoom in"
-      >
-        +
-      </button>
-      <button
-        id="zoomReset"
-        class="lightbox-control"
-        type="button"
-        aria-label="Reset zoom"
-      >
-        ↺
-      </button>
     </div>
   </div>
-  <!-- =======================================================
-       FOOTER
-  ======================================================== -->
-  <footer>
-    <div class="container">
-      <div class="footer-inner">
-        <div>
-          <span class="footer-brand">
-            Jana Gamal
-          </span>
-          &nbsp;·&nbsp;
-          Data Analyst &amp; BI Specialist
-        </div>
-        <div class="footer-note">
-          Built for better business decisions.
+</section>
+<!-- =====================================================
+     ABOUT
+====================================================== -->
+<section
+  class="section"
+  id="about"
+>
+  <div class="container">
+    <div class="section-label">
+      01 / About
+    </div>
+    <div class="summary-grid">
+      <div class="summary-intro">
+        <h3>
+          From messy data to business clarity.
+        </h3>
+        <p>
+          Professional Summary
+        </p>
+      </div>
+      <div class="summary-copy">
+        <p>
+          I’m a results-driven Data Analyst &amp; BI Specialist
+          focused on transforming disorganized, raw data into
+          clean, structured, and actionable business intelligence.
+        </p>
+        <p>
+          Working primarily with Excel and Power BI, I bridge
+          the gap between chaotic spreadsheets and clear
+          executive visibility — making information easier to
+          understand, explore, and act on.
+        </p>
+        <div class="summary-highlight">
+          Whether you are dealing with fragmented files or need
+          dynamic dashboards to monitor key performance indicators,
+          I help business owners, startups, and operations teams
+          turn their data into practical insights without the
+          headache.
         </div>
       </div>
     </div>
+  </div>
+</section>
+<!-- =====================================================
+     SERVICES / EXPERTISE
+====================================================== -->
+<section
+  class="section"
+  id="services"
+>
+  <div class="container">
+    <div class="section-label">
+      02 / Services
+    </div>
+    <div class="section-heading">
+      <h2>
+        Data work built around clarity.
+      </h2>
+      <p>
+        I focus on the parts of analytics that turn raw
+        information into reliable, useful business reporting.
+      </p>
+    </div>
+    <div class="expertise-grid">
+      <article class="expertise-card">
+        <div class="card-number">
+          01 / 03
+        </div>
+        <h3>
+          Data Cleaning &amp; Preparation
+        </h3>
+        <p>
+          Building a reliable foundation before analysis begins.
+          I transform inconsistent and fragmented datasets into
+          structured, analysis-ready data.
+        </p>
+        <ul class="service-list">
+          <li>
+            Data hygiene &amp; structural formatting
+          </li>
+          <li>
+            Deduplication and data validation
+          </li>
+          <li>
+            Power Query transformations
+          </li>
+        </ul>
+      </article>
+      <article class="expertise-card">
+        <div class="card-number">
+          02 / 03
+        </div>
+        <h3>
+          Business Visualization &amp; Reporting
+        </h3>
+        <p>
+          Turning complex metrics into intuitive reports and
+          dashboards that make important information easier
+          to understand.
+        </p>
+        <ul class="service-list">
+          <li>
+            Interactive Power BI dashboards
+          </li>
+          <li>
+            Executive-ready KPI reporting
+          </li>
+          <li>
+            Dynamic Excel reporting
+          </li>
+        </ul>
+      </article>
+      <article class="expertise-card">
+        <div class="card-number">
+          03 / 03
+        </div>
+        <h3>
+          Business Analysis
+        </h3>
+        <p>
+          Connecting numbers to business questions so that
+          reporting is focused on what actually matters.
+        </p>
+        <ul class="service-list">
+          <li>
+            KPI and performance analysis
+          </li>
+          <li>
+            Trend and pattern identification
+          </li>
+          <li>
+            Operational performance insights
+          </li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- =====================================================
+     PROJECTS
+====================================================== -->
+<section
+  class="section"
+  id="work"
+>
+  <div class="container">
+    <div class="projects-header">
+      <div class="section-heading">
+        <div class="section-label">
+          03 / Selected Work
+        </div>
+        <h2>
+          The work behind the numbers.
+        </h2>
+        <p>
+          Four analytics projects covering sales,
+          mobility, supply chain, and restaurant operations.
+        </p>
+      </div>
+      <div class="project-count">
+        04 ANALYTICS PROJECTS
+      </div>
+    </div>
+    <div class="projects-grid">
+      <article class="project-card">
+        <div class="project-image-wrapper">
+          <img
+            src="superstore.png"
+            alt="Superstore Sales Analytics dashboard"
+            class="project-img"
+            loading="lazy"
+          />
+        </div>
+        <div class="project-body">
+          <div class="project-topline">
+            <span class="project-type">
+              Excel Analytics
+            </span>
+            <span class="project-index">
+              01 / 04
+            </span>
+          </div>
+          <h3 class="project-title">
+            Superstore Sales Analytics
+          </h3>
+          <p class="project-description">
+            A multi-year sales analysis covering 2016–2019,
+            designed to explore commercial performance across
+            customer segments, regions, and product categories.
+            The analysis uses dynamic Excel reporting, KPIs,
+            Pivot Tables, and interactive slicers.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Excel</span>
+            <span class="tag">Pivot Tables</span>
+            <span class="tag">Data Modeling</span>
+            <span class="tag">KPI Analysis</span>
+          </div>
+          <div class="project-buttons">
+            <a
+              href="https://mavenshowcase.com/project/57862"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              View Case Study
+            </a>
+            <a
+              href="https://tinyurl.com/SuperStoreAnalysis-Jana"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              Excel File
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card">
+        <div class="project-image-wrapper">
+          <img
+            src="uber.png"
+            alt="Uber Trips and Cancellation Analytics dashboard"
+            class="project-img"
+            loading="lazy"
+          />
+        </div>
+        <div class="project-body">
+          <div class="project-topline">
+            <span class="project-type">
+              Power BI
+            </span>
+            <span class="project-index">
+              02 / 04
+            </span>
+          </div>
+          <h3 class="project-title">
+            Uber Trips &amp; Cancellation Analytics
+          </h3>
+          <p class="project-description">
+            An operational analytics project focused on trip
+            activity, completed and cancelled rides, vehicle
+            performance, and the factors contributing to
+            cancellation patterns.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Power BI</span>
+            <span class="tag">DAX</span>
+            <span class="tag">Power Query</span>
+            <span class="tag">Operations</span>
+          </div>
+          <div class="project-buttons">
+            <a
+              href="https://mavenshowcase.com/project/57863"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              View Case Study
+            </a>
+            <a
+              href="https://tinyurl.com/ubertrips-analysis"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              Power BI File
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card">
+        <div class="project-image-wrapper">
+          <img
+            src="samsung.png"
+            alt="Samsung Supply Chain Analytics dashboard"
+            class="project-img"
+            loading="lazy"
+          />
+        </div>
+        <div class="project-body">
+          <div class="project-topline">
+            <span class="project-type">
+              Power BI + ETL
+            </span>
+            <span class="project-index">
+              03 / 04
+            </span>
+          </div>
+          <h3 class="project-title">
+            Samsung Supply Chain Analytics
+          </h3>
+          <p class="project-description">
+            An end-to-end supply chain analysis examining
+            supplier performance, inventory, lead times,
+            carrier delays, fulfillment efficiency, and
+            logistics-related KPIs.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Power BI</span>
+            <span class="tag">Power Query</span>
+            <span class="tag">DAX</span>
+            <span class="tag">Supply Chain</span>
+          </div>
+          <div class="project-buttons">
+            <a
+              href="https://mavenshowcase.com/project/57864"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              View Case Study
+            </a>
+            <a
+              href="https://tinyurl.com/SamsungAnalysis-Jana"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              Power BI File
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card">
+        <div class="project-image-wrapper">
+          <img
+            src="pizza.png"
+            alt="USA Pizza Orders Analysis dashboard"
+            class="project-img"
+            loading="lazy"
+          />
+        </div>
+        <div class="project-body">
+          <div class="project-topline">
+            <span class="project-type">
+              Business Analytics
+            </span>
+            <span class="project-index">
+              04 / 04
+            </span>
+          </div>
+          <h3 class="project-title">
+            USA Pizza Orders Analysis
+          </h3>
+          <p class="project-description">
+            A restaurant operations analysis exploring order
+            volume, delivery performance, payment methods,
+            product categories, geographic patterns, and
+            monthly sales trends.
+          </p>
+          <div class="project-tags">
+            <span class="tag">SQL</span>
+            <span class="tag">Power BI</span>
+            <span class="tag">DAX</span>
+            <span class="tag">Operations</span>
+          </div>
+          <div class="project-buttons">
+            <a
+              href="https://mavenshowcase.com/project/57865"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-primary"
+            >
+              View Case Study
+            </a>
+            <a
+              href="https://tinyurl.com/USAPizzaAnalysis-Jana"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-secondary"
+            >
+              Power BI File
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- =====================================================
+     SKILLS
+====================================================== -->
+<section
+  class="section"
+  id="skills"
+>
+  <div class="container">
+    <div class="section-label">
+      04 / Skills
+    </div>
+    <div class="skills-layout">
+      <div class="skills-intro">
+        <h3>
+          The tools behind the analysis.
+        </h3>
+        <p>
+          My core toolkit is focused on practical data analysis,
+          business intelligence, data preparation, and clear
+          reporting.
+        </p>
+      </div>
+      <div class="skills-list">
+        <article class="skill-card">
+          <span class="skill-number">
+            01
+          </span>
+          <h4>
+            Advanced Excel
+          </h4>
+          <p>
+            Data analysis, formulas, Pivot Tables,
+            dynamic reporting, and modeling.
+          </p>
+        </article>
+        <article class="skill-card">
+          <span class="skill-number">
+            02
+          </span>
+          <h4>
+            Power BI
+          </h4>
+          <p>
+            Interactive dashboards, KPI reporting,
+            DAX, and business visualization.
+          </p>
+        </article>
+        <article class="skill-card">
+          <span class="skill-number">
+            03
+          </span>
+          <h4>
+            SQL
+          </h4>
+          <p>
+            Querying, filtering, aggregating,
+            and analyzing structured data.
+          </p>
+        </article>
+        <article class="skill-card">
+          <span class="skill-number">
+            04
+          </span>
+          <h4>
+            Power Query
+          </h4>
+          <p>
+            Data cleaning, transformation,
+            preparation, and repeatable workflows.
+          </p>
+        </article>
+        <article class="skill-card">
+          <span class="skill-number">
+            05
+          </span>
+          <h4>
+            Data Cleaning
+          </h4>
+          <p>
+            Deduplication, formatting,
+            validation, and structural preparation.
+          </p>
+        </article>
+        <article class="skill-card">
+          <span class="skill-number">
+            06
+          </span>
+          <h4>
+            Business Reporting
+          </h4>
+          <p>
+            KPI-focused reports designed around
+            practical business questions.
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- =====================================================
+     CERTIFICATIONS
+====================================================== -->
+<section class="section">
+  <div class="container">
+    <div class="section-label">
+      05 / Certifications &amp; Training
+    </div>
+    <div class="section-heading">
+      <h2>
+        Building a practical analytics foundation.
+      </h2>
+      <p>
+        Training focused on developing the analytical,
+        technical, and business skills needed to work
+        effectively with data.
+      </p>
+    </div>
+    <div class="certifications-grid">
+      <article class="cert-card">
+        <div class="cert-icon">
+          IBM
+        </div>
+        <div>
+          <h3>
+            IBM Data Fundamentals Certificate
+          </h3>
+          <p>
+            Data fundamentals and analytical concepts.
+          </p>
+        </div>
+      </article>
+      <article class="cert-card">
+        <div class="cert-icon">
+          DEPI
+        </div>
+        <div>
+          <h3>
+            Digital Egypt Pioneers Initiative
+          </h3>
+          <p>
+            Data Analytics Track
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- =====================================================
+     WHY WORK WITH ME
+====================================================== -->
+<section
+  class="section why-section"
+  id="why"
+>
+  <div class="container">
+    <div class="section-label">
+      06 / Why Work With Me
+    </div>
+    <div class="section-heading">
+      <h2>
+        More than dashboards.
+      </h2>
+      <p>
+        Good analytics should make your work easier,
+        your reporting more reliable, and your decisions
+        more informed.
+      </p>
+    </div>
+    <div class="why-grid">
+      <article class="why-card">
+        <div class="why-card-number">
+          01 / QUALITY
+        </div>
+        <h3>
+          Obsessive Quality Control
+        </h3>
+        <p>
+          I don’t just build reports. I pay close attention
+          to the underlying data structure first, cleaning,
+          validating, and checking the data so the resulting
+          insights are reliable and trustworthy.
+        </p>
+      </article>
+      <article class="why-card">
+        <div class="why-card-number">
+          02 / BUSINESS
+        </div>
+        <h3>
+          Business-First Mindset
+        </h3>
+        <p>
+          I focus on the metrics that matter most to your
+          business. The goal is to reduce repetitive manual
+          reporting and give you clearer visibility into
+          performance and operations.
+        </p>
+      </article>
+      <article class="why-card">
+        <div class="why-card-number">
+          03 / COMMUNICATION
+        </div>
+        <h3>
+          Clear &amp; Transparent Communication
+        </h3>
+        <p>
+          You’ll get structured deliverables, clear project
+          milestones, and communication focused on your
+          specific goals and requirements.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- =====================================================
+     FINAL CTA
+====================================================== -->
+<section class="cta">
+  <div class="container">
+    <div class="cta-inner">
+      <div class="section-label" style="justify-content:center;">
+        Ready to work with your data?
+      </div>
+      <h2>
+        Let’s turn your complex data into your biggest
+        business advantage.
+      </h2>
+      <p>
+        If you have messy spreadsheets, fragmented data,
+        repetitive reporting, or need a clear Power BI
+        dashboard, I’d be happy to discuss your project
+        and understand what you need.
+      </p>
+      <span class="cta-highlight">
+        Message me through the freelance platform where
+        you found this portfolio.
+      </span>
+    </div>
+  </div>
+</section>
+  </main>
+  <!-- =======================================================
+       FOOTER
+    ======================================================== -->
+  <footer>
+<div class="container">
+  <div class="footer-inner">
+    <div>
+      <span class="footer-brand">
+        Jana Gamal
+      </span>
+      &nbsp;·&nbsp;
+      Data Analyst &amp; BI Specialist
+    </div>
+    <div class="footer-note">
+      Built for better business decisions.
+    </div>
+  </div>
+</div>
   </footer>
   <!-- =======================================================
        THEME SWITCHER
-       + DASHBOARD IMAGE VIEWER
   ======================================================== -->
   <script>
-    /* =========================================================
-       THEME SWITCHER
-    ========================================================= */
     const themeToggle =
       document.getElementById("themeToggle");
     const themeIcon =
@@ -1953,293 +1631,6 @@
             ? "light"
             : "dark";
         setTheme(targetTheme);
-      }
-    );
-    /* =========================================================
-       DASHBOARD IMAGE LIGHTBOX
-    ========================================================= */
-    const imageLightbox =
-      document.getElementById("imageLightbox");
-    const lightboxContent =
-      document.getElementById("lightboxContent");
-    const lightboxImage =
-      document.getElementById("lightboxImage");
-    const lightboxClose =
-      document.getElementById("lightboxClose");
-    const zoomInButton =
-      document.getElementById("zoomIn");
-    const zoomOutButton =
-      document.getElementById("zoomOut");
-    const zoomResetButton =
-      document.getElementById("zoomReset");
-    const zoomLevel =
-      document.getElementById("zoomLevel");
-    let zoom = 1;
-    let translateX = 0;
-    let translateY = 0;
-    let isDragging = false;
-    let startX = 0;
-    let startY = 0;
-    let startTranslateX = 0;
-    let startTranslateY = 0;
-    /* ---------------------------------------------------------
-       OPEN LIGHTBOX
-    --------------------------------------------------------- */
-    document
-      .querySelectorAll(".project-image-wrapper")
-      .forEach(wrapper => {
-        wrapper.addEventListener(
-          "click",
-          () => {
-            const image =
-              wrapper.querySelector(".project-img");
-            if (!image) return;
-            lightboxImage.src =
-              image.src;
-            lightboxImage.alt =
-              image.alt ||
-              "Dashboard preview";
-            resetZoom();
-            imageLightbox.classList.add(
-              "active"
-            );
-            imageLightbox.setAttribute(
-              "aria-hidden",
-              "false"
-            );
-            document.body.classList.add(
-              "lightbox-open"
-            );
-          }
-        );
-      });
-    /* ---------------------------------------------------------
-       CLOSE LIGHTBOX
-    --------------------------------------------------------- */
-    function closeLightbox() {
-      imageLightbox.classList.remove(
-        "active"
-      );
-      imageLightbox.setAttribute(
-        "aria-hidden",
-        "true"
-      );
-      document.body.classList.remove(
-        "lightbox-open"
-      );
-      lightboxImage.src = "";
-    }
-    lightboxClose.addEventListener(
-      "click",
-      closeLightbox
-    );
-    /* ---------------------------------------------------------
-       CLICK BACKGROUND TO CLOSE
-    --------------------------------------------------------- */
-    imageLightbox.addEventListener(
-      "click",
-      event => {
-        if (
-          event.target === imageLightbox
-        ) {
-          closeLightbox();
-        }
-      }
-    );
-    /* ---------------------------------------------------------
-       ZOOM
-    --------------------------------------------------------- */
-    function updateZoom() {
-      lightboxImage.style.transform =
-        `translate(${translateX}px, ${translateY}px) scale(${zoom})`;
-      zoomLevel.textContent =
-        `${Math.round(zoom * 100)}%`;
-    }
-    function setZoom(newZoom) {
-      zoom =
-        Math.min(
-          5,
-          Math.max(
-            0.5,
-            newZoom
-          )
-        );
-      updateZoom();
-    }
-    function resetZoom() {
-      zoom = 1;
-      translateX = 0;
-      translateY = 0;
-      updateZoom();
-    }
-    zoomInButton.addEventListener(
-      "click",
-      event => {
-        event.stopPropagation();
-        setZoom(
-          zoom + 0.25
-        );
-      }
-    );
-    zoomOutButton.addEventListener(
-      "click",
-      event => {
-        event.stopPropagation();
-        setZoom(
-          zoom - 0.25
-        );
-      }
-    );
-    zoomResetButton.addEventListener(
-      "click",
-      event => {
-        event.stopPropagation();
-        resetZoom();
-      }
-    );
-    /* ---------------------------------------------------------
-       MOUSE WHEEL ZOOM
-    --------------------------------------------------------- */
-    lightboxContent.addEventListener(
-      "wheel",
-      event => {
-        event.preventDefault();
-        const zoomAmount =
-          event.deltaY < 0
-            ? 0.15
-            : -0.15;
-        setZoom(
-          zoom + zoomAmount
-        );
-      },
-      {
-        passive: false
-      }
-    );
-    /* ---------------------------------------------------------
-       DOUBLE CLICK ZOOM
-    --------------------------------------------------------- */
-    lightboxImage.addEventListener(
-      "dblclick",
-      event => {
-        event.preventDefault();
-        if (zoom === 1) {
-          setZoom(2);
-        } else {
-          resetZoom();
-        }
-      }
-    );
-    /* ---------------------------------------------------------
-       DRAG / PAN
-    --------------------------------------------------------- */
-    lightboxContent.addEventListener(
-      "pointerdown",
-      event => {
-        if (
-          event.target !== lightboxImage
-        ) {
-          return;
-        }
-        isDragging = true;
-        lightboxContent.classList.add(
-          "dragging"
-        );
-        startX =
-          event.clientX;
-        startY =
-          event.clientY;
-        startTranslateX =
-          translateX;
-        startTranslateY =
-          translateY;
-        lightboxContent.setPointerCapture(
-          event.pointerId
-        );
-      }
-    );
-    lightboxContent.addEventListener(
-      "pointermove",
-      event => {
-        if (!isDragging) return;
-        translateX =
-          startTranslateX +
-          (event.clientX - startX);
-        translateY =
-          startTranslateY +
-          (event.clientY - startY);
-        updateZoom();
-      }
-    );
-    function stopDragging(event) {
-      if (!isDragging) return;
-      isDragging = false;
-      lightboxContent.classList.remove(
-        "dragging"
-      );
-      try {
-        lightboxContent.releasePointerCapture(
-          event.pointerId
-        );
-      } catch (error) {}
-    }
-    lightboxContent.addEventListener(
-      "pointerup",
-      stopDragging
-    );
-    lightboxContent.addEventListener(
-      "pointercancel",
-      stopDragging
-    );
-    /* ---------------------------------------------------------
-       ESCAPE KEY
-    --------------------------------------------------------- */
-    document.addEventListener(
-      "keydown",
-      event => {
-        if (
-          event.key === "Escape" &&
-          imageLightbox.classList.contains(
-            "active"
-          )
-        ) {
-          closeLightbox();
-        }
-      }
-    );
-    /* ---------------------------------------------------------
-       KEYBOARD ZOOM
-    --------------------------------------------------------- */
-    document.addEventListener(
-      "keydown",
-      event => {
-        if (
-          !imageLightbox.classList.contains(
-            "active"
-          )
-        ) {
-          return;
-        }
-        if (
-          event.key === "+" ||
-          event.key === "="
-        ) {
-          setZoom(
-            zoom + 0.25
-          );
-        }
-        if (
-          event.key === "-"
-        ) {
-          setZoom(
-            zoom - 0.25
-          );
-        }
-        if (
-          event.key === "0"
-        ) {
-          resetZoom();
-        }
       }
     );
   </script>
