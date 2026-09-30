@@ -86,9 +86,7 @@
       transition: background-color 0.3s ease, color 0.3s ease;
     }
 
-    /* =========================================================
-       1. INTERACTIVE PRELOADER SCREEN
-    ========================================================= */
+    /* Preloader */
     #preloader {
       position: fixed;
       inset: 0;
@@ -140,9 +138,7 @@
       to { transform: rotate(360deg); }
     }
 
-    /* =========================================================
-       2. CONSTELLATION PARTICLE CANVAS
-    ========================================================= */
+    /* Particle Background Canvas */
     #particle-canvas {
       position: fixed;
       top: 0;
@@ -238,9 +234,6 @@
       gap: 12px;
     }
 
-    /* =========================================================
-       5. THEME TOGGLE (LIGHT / DARK)
-    ========================================================= */
     .theme-toggle-btn {
       display: inline-flex;
       align-items: center;
@@ -366,28 +359,27 @@
       box-shadow: 0 0 0 4px rgba(52, 211, 153, 0.15);
     }
 
-    /* Colorful Baby Blue Gradient in Dark Mode, Solid Black in Light Mode */
+    /* Name: Shifted one space to the left side and changed to solid white in dark mode, black in light mode */
     .hero h1 {
       margin-bottom: 14px;
       font-size: clamp(3.2rem, 8vw, 5.8rem);
       line-height: 1;
       letter-spacing: -0.06em;
       font-weight: 800;
-      background: linear-gradient(135deg, #7dd3fc 0%, #38bdf8 50%, #60a5fa 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: #ffffff;
+      background: none;
+      -webkit-background-clip: unset;
+      -webkit-text-fill-color: #ffffff;
+      position: relative;
+      right: 0.35em;
       transition: color 0.3s ease;
     }
     [data-theme="light"] .hero h1 {
-      background: none;
-      -webkit-background-clip: unset;
-      -webkit-text-fill-color: #000000;
       color: #000000;
+      -webkit-text-fill-color: #000000;
     }
 
-    /* =========================================================
-       3. TYPING ANIMATION HEADER
-    ========================================================= */
+    /* Typing Animation Header */
     .hero-typewriter-wrap {
       min-height: 34px;
       margin-bottom: 18px;
@@ -454,9 +446,7 @@
       transform: translateY(-2px);
     }
 
-    /* =========================================================
-       4. POWER BI-INSPIRED LIVE GLOWING KPI TILES
-    ========================================================= */
+    /* Live KPI Tiles */
     .kpi-board {
       margin-top: 50px;
       display: grid;
@@ -1093,7 +1083,7 @@
       .container { width: min(100% - 28px, 1160px); }
       .section { padding: 75px 0; }
       .hero { padding: 95px 0 70px; }
-      .hero h1 { font-size: 3.25rem; }
+      .hero h1 { font-size: 3.25rem; right: 0.25em; }
       .kpi-board { grid-template-columns: 1fr; }
       .projects-header { align-items: flex-start; flex-direction: column; gap: 14px; }
       .project-image-wrapper { height: 210px; }
@@ -1109,7 +1099,7 @@
 
 <body>
 
-  <!-- 1. INTERACTIVE PRELOADER -->
+  <!-- 1. PRELOADER -->
   <div id="preloader">
     <div class="preloader-core">
       <div class="preloader-ring"></div>
@@ -1175,7 +1165,7 @@
             👋 Welcome, I'm
           </div>
 
-          <!-- Name: Baby blue gradient in dark mode / Black in light mode -->
+          <!-- Name: Solid white in dark mode, solid black in light mode, shifted one space to the left -->
           <h1>
             Jana Gamal
           </h1>
@@ -1330,7 +1320,6 @@
 
           <div style="display:flex; flex-direction:column; align-items:flex-end; gap:10px;">
             <div class="project-count">04 ANALYTICS PROJECTS</div>
-            <!-- Dynamic Category Filter -->
             <div class="filter-wrapper">
               <button class="filter-btn active" data-filter="all">All (4)</button>
               <button class="filter-btn" data-filter="excel">Excel</button>
@@ -1612,7 +1601,7 @@
       }
     }
     window.addEventListener("load", dismissPreloader);
-    setTimeout(dismissPreloader, 700); // Guarantees preloader never hangs
+    setTimeout(dismissPreloader, 700);
 
     /* =========================================================
        2. CONSTELLATION PARTICLE CANVAS
@@ -1771,7 +1760,6 @@
         runCounters();
       }
     });
-    // Trigger immediately if already in view
     setTimeout(() => {
       if (!countersStarted) {
         countersStarted = true;
